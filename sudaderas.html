@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa.</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/compras.css">
+    <link rel="shourtcut icon" href="./img/icono.png">
+
+</head>
+
+<body>
+    <header class="container-fluid bg-dark position-sticky top-0">
+        <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a href="index.html"><button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">EDACS</button></a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Productos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</button>
+            </li>
+        </ul>
+    </header>
+
+
+    <div class ="alert container position-sticky top-0 alert-primary hide" role ="alert">
+    Producto añadido al carrito!
+    </div>
+    <div class ="alert container position-sticky top-0 alert-danger remove" role ="alert">
+        Producto removido
+        </div>
+
+
+    <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">1.</div>
+        
+            <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <h2 class="h4 m-4 text-primary">Productos</h2>
+
+                <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Sudadera Estampada Texto</h5>
+                            <img src="./img/s1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text text-white-50 description">Sudadera cerrada, estilo drop shoulder, color negro, cuello redondo, rib en mangas y en bajo, estampado texto.</p>
+                              <h5   class="text-primary">Precio: <span class="precio">$399.00</span> </h5>
+                              <div class="d-grid gap-2">
+                              <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                            </div>
+                          </div>
+                    </div>
+               
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Sudadera Cuello Redondo
+                            </h5>
+                            <img src="./img/s2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text text-white-50 description">Sudadera cerrada color naranja, cuello redondo, manga larga, estampado localizado en la parte frontal de la prenda cuenta con puños en mangas y cintura. Fit relaxed.
+                            </p>
+                              <h5   class="text-primary">Precio: <span class="precio">$299.00</span> </h5>
+                              <div class="d-grid gap-2">
+                              <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Sudadera Lisa Con Capucha</h5>
+                            <img src="./img/s3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text text-white-50 description">Sudadera cerrada color verde con capucha, manga larga, bolsa canguro, jaretas a tono, cuenta con puños en mangas y bajos. Fit relaxed.</p>
+                              <h5   class="text-primary">Precio: <span class="precio">$399.00</span> </h5>
+                              <div class="d-grid gap-2">
+                              <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Sudadera Estampada Texto</h5>
+                            <img src="./img/s4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text text-white-50 description">Sudadera cerrada, estilo drop shoulder, color negro, cuello redondo, rib en mangas y en bajo, estampado texto.</p>
+                              <h5   class="text-primary">Precio: <span class="precio">$399.00</span> </h5>
+                              <div class="d-grid gap-2">
+                              <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Sudadera Estampada</h5>
+                            <img src="./img/s5.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text text-white-50 description">Sudadera cerrada color negro con capucha, manga larga, estampado en parte frontal con jaretas a tono, cuenta con puños en mangas y bajos. Fit relaxed.</p>
+                              <h5   class="text-primary">Precio: <span class="precio">$399.00</span> </h5>
+                              <div class="d-grid gap-2">
+                              <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Sudadera Cuello Redondo</h5>
+                            <img src="./img/s6.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text text-white-50 description">Sudadera cerrada color blanco, cuello redondo, manga larga, estampado localizado en la parte frontal de la prenda cuenta con puños en mangas y cintura. Fit relaxed.</p>
+                              <h5   class="text-primary">Precio: <span class="precio">$299.00</span> </h5>
+                              <div class="d-grid gap-2">
+                              <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Sudadera Cerrada Lum
+                            </h5>
+                            <img src="./img/s7.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text text-white-50 description">Sudadera cerrada color verde bosque de niño con capucha estampado campaña LUM bolsillo tipo canguro al frente, rib en puños y bajos.</p>
+                              <h5   class="text-primary">Precio: <span class="precio">$350.00</span> </h5>
+                              <div class="d-grid gap-2">
+                              <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Sudadera Estampada Texto
+                            </h5>
+                            <img src="./img/s8.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text text-white-50 description">Sudadera cerrada, estilo drop shoulder, color negro, cuello redondo, rib en mangas y en bajo, estampado texto.</p>
+                              <h5   class="text-primary">Precio: <span class="precio">$399.00</span> </h5>
+                              <div class="d-grid gap-2">
+                              <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+                </div>
+            
+
+
+
+
+
+
+            <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+            <br>
+                <table class="table table-dark table-striped">
+                    <thead>
+                      <tr class="text-primary">
+                        <th scope="col">#</th>
+                        <th scope="col">Productos</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                      </tr>
+                    </thead>
+                    <tbody class="tbody">
+                      <tr>
+                       
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br><br>
+
+                  <div class="row mx-4">
+                    <div class="col">
+                        <h3 class="itemCartTotal text-white">Total 0</h3>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <button class="btn btn-success">COMPRAR</button>
+                    </div>
+                  </div>
+
+            </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="./js/compras.js"></script>
+
+
+</body>
+
+</html>
